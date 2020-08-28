@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2adacfdfcf06b47a6af1e275e71e85, type: 3}
+  m_Name: PathDef_RightToLeft_Near_Medium_NoLoop
+  m_EditorClassIdentifier: 
+  m_loop: 0
+  m_destroyAtEnd: 1
+  m_travelTime: 2.5
+  m_normalisedPoints:
+  - {x: 1, y: 0.35}
+  - {x: 0, y: 0.35}

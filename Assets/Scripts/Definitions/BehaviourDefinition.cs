@@ -60,13 +60,22 @@ public class BehaviourContext : IContext
         m_definition = a_definition;
     }
 
+    public void OnPrimaryWeaponUsed()
+    {
+        m_timeTilNextPrimaryShotAttempt = m_definition.TimeBetweenPrimaryWeaponShots;
+    }
+
+    public void OnSecondaryWeaponUsed()
+    {
+        m_timeTilNextSecondaryShotAttempt = m_definition.TimeBetweenSecondaryWeaponShots;
+    }
 
     #region IContext
 
     public void Process(float a_deltaTime)
     {
-        m_timeTilNextPrimaryShotAttempt = Mathf.Min(m_timeTilNextPrimaryShotAttempt - a_deltaTime, 0.0f);
-        m_timeTilNextSecondaryShotAttempt = Mathf.Min(m_timeTilNextSecondaryShotAttempt - a_deltaTime, 0.0f);
+        m_timeTilNextPrimaryShotAttempt = Mathf.Max(m_timeTilNextPrimaryShotAttempt - a_deltaTime, 0.0f);
+        m_timeTilNextSecondaryShotAttempt = Mathf.Max(m_timeTilNextSecondaryShotAttempt - a_deltaTime, 0.0f);
     }
 
     #endregion // IContext

@@ -10,11 +10,11 @@ public abstract class ShipController : MonoBehaviour
 
     protected abstract int ProjectileLayer { get; }
 
-    public void FirePrimaryWeapon()
+    public bool FirePrimaryWeapon()
     {
         if (!Ship.Context.PrimaryWeaponContext.CanShoot)
         {
-            return;
+            return false;
         }
 
         var configName = Ship.Context.PrimaryWeaponContext.Definition.WeaponKindDefinition.ConfigName;
@@ -24,14 +24,17 @@ public abstract class ShipController : MonoBehaviour
         {
             var weaponConfig = Ship.Model.WeaponConfigurations[weaponConfigIndex];
             Ship.Context.PrimaryWeaponContext.Shoot(weaponConfig.Muzzles, ProjectileLayer);
+            return true;
         }
+
+        return false;
     }
 
-    public void FireSecondaryWeapon()
+    public bool FireSecondaryWeapon()
     {
         if (!Ship.Context.SecondaryWeaponContext.CanShoot)
         {
-            return;
+            return false;
         }
 
         var configName = Ship.Context.SecondaryWeaponContext.Definition.WeaponKindDefinition.ConfigName;
@@ -41,7 +44,10 @@ public abstract class ShipController : MonoBehaviour
         {
             var weaponConfig = Ship.Model.WeaponConfigurations[weaponConfigIndex];
             Ship.Context.SecondaryWeaponContext.Shoot(weaponConfig.Muzzles, ProjectileLayer);
+            return true;
         }
+
+        return false;
     }
 
     public void SetShieldElement(Element a_element)

@@ -80,13 +80,19 @@ public class EnemyShipController : ShipController
         if (m_primaryWeaponCanShoot
             && m_behaviourContext.CanShootPrimaryWeapon)
         {
-            FirePrimaryWeapon();
+            if (FirePrimaryWeapon())
+            {
+                m_behaviourContext.OnPrimaryWeaponUsed();
+            }
         }
 
         if (m_secondaryWeaponCanShoot
             && m_behaviourContext.CanShootSecondaryWeapon)
         {
-            FireSecondaryWeapon();
+            if (FireSecondaryWeapon())
+            {
+                m_behaviourContext.OnSecondaryWeaponUsed();
+            }
         }
     }
 

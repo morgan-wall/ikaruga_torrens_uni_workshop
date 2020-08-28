@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0ac9af467a42444930c0399246513e, type: 3}
+  m_Name: ProjectileDef_Red_07_Heavy
+  m_EditorClassIdentifier: 
+  m_name: 
+  m_speed: 15
+  m_lifetime: -1
+  m_element: 1
+  m_prefab: {fileID: 6110837085974443152, guid: fb7c3f259fddeda40a47926f655ad1b7,
+    type: 3}

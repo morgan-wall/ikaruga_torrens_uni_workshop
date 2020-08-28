@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143f77800a01fd343a41ec9424cb6b19, type: 3}
   m_Name: Event_SpawnShip_Enemy
   m_EditorClassIdentifier: 
-  m_time: 1
   m_shipDefinition: {fileID: 11400000, guid: 5f00be1bfe98fa34ebacda35b0b017fe, type: 2}
-  m_pathDefinition: {fileID: 11400000, guid: 1a0e09c2a8b157e4fab69139cc80dc00, type: 2}
-  m_behaviourDefinition: {fileID: 11400000, guid: 8b4f845b584b857458818ebcf048ca58,
+  m_pathDefinition: {fileID: 11400000, guid: e54ca7d28d3a0e54f8f62977a4cf2f01, type: 2}
+  m_behaviourDefinition: {fileID: 11400000, guid: 908cdc21cdc4acf47bfb7fdef7c2022d,
     type: 2}
