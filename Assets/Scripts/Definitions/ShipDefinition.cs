@@ -8,16 +8,16 @@ public class ShipDefinition : ScriptableObject, IContextDefinition<ShipContext>,
     private static readonly int k_objectPoolSize = 15;
 
     [SerializeField]
-    private string m_name;
+    private string m_name = default;
 
     [SerializeField]
-    private ShipKindDefinition m_shipKindDefinition;
+    private ShipKindDefinition m_shipKindDefinition = default;
 
     [SerializeField]
-    private Image m_iconPrefab;
+    private Image m_iconPrefab = default;
 
     [SerializeField]
-    private Ship m_prefab;
+    private Ship m_prefab = default;
 
     public string Name { get { return m_name; } }
     public ShipKindDefinition ShipKindDefinition { get { return m_shipKindDefinition; } }

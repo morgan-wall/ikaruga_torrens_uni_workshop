@@ -5,13 +5,13 @@ using UnityEngine.Assertions;
 public class SpawnShipEvent : Event
 {
     [SerializeField]
-    private ShipDefinition m_shipDefinition;
+    private ShipDefinition m_shipDefinition = default;
 
     [SerializeField]
-    private PathDefinition m_pathDefinition;
+    private PathDefinition m_pathDefinition = default;
 
     [SerializeField]
-    private BehaviourDefinition m_behaviourDefinition;
+    private BehaviourDefinition m_behaviourDefinition = default;
 
     public override void Execute(GameManager a_sessionManager)
     {

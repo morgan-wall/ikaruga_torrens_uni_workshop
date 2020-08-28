@@ -6,7 +6,7 @@ public class Ship : MonoBehaviour, IPooledObject
     public delegate void ShipDelegate(Ship a_ship);
 
     [SerializeField]
-    private Model m_modelPrefab;
+    private Model m_modelPrefab = default;
 
     private Model m_model;
     private ShipContext m_context;

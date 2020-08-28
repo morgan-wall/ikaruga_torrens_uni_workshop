@@ -3,10 +3,10 @@
 public class CombatEffectEffect : CombatEffect
 {
     [SerializeField]
-    private string m_beginId;
+    private string m_beginId = default;
 
     [SerializeField]
-    private string m_endId;
+    private string m_endId = default;
 
     protected override bool Apply(ApplyContext a_applyContext)
     {

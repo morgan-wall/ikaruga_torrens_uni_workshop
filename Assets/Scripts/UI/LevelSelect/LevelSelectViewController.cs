@@ -9,10 +9,10 @@ public class LevelSelectViewController : MonoBehaviour
     private static readonly int k_buttonObjectPoolSize = 10;
     
     [SerializeField]
-    private LevelSelectButton m_levelButtonPrefab;
+    private LevelSelectButton m_levelButtonPrefab = default;
 
     [SerializeField]
-    private RectTransform m_levelButtonArea;
+    private RectTransform m_levelButtonArea = default;
 
     private List<LevelSelectButton> m_levelSelectButtons = new List<LevelSelectButton>();
 

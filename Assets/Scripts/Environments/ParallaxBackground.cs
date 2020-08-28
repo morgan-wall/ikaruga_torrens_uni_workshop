@@ -15,7 +15,7 @@ public class ParallaxBackground : MonoBehaviour
     private static readonly Vector3 k_moveDirection = Vector3.down;
 
     [SerializeField]
-    private EntityInfo[] m_entityInfo;
+    private EntityInfo[] m_entityInfo = default;
 
     [SerializeField]
     private float m_metresPerSecond = 1.0f;

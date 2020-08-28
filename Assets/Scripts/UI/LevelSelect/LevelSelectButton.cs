@@ -4,10 +4,10 @@ using UnityEngine.UI;
 public class LevelSelectButton : MonoBehaviour
 {
     [SerializeField]
-    private Text m_levelNameText;
+    private Text m_levelNameText = default;
 
     [SerializeField]
-    private Button m_button;
+    private Button m_button = default;
 
     private LevelDefinition m_levelDefinition;
 

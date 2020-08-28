@@ -11,7 +11,7 @@ public class ScoreViewController : MonoBehaviour
     }
 
     [SerializeField]
-    private RectTransform m_numbersGrid;
+    private RectTransform m_numbersGrid = default;
 
     private int m_score;
     private LevelContext m_boundedContext;

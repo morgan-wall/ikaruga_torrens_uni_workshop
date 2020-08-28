@@ -3,7 +3,7 @@
 public class CombatEffectScore : CombatEffect
 {
     [SerializeField]
-    private int m_amount;
+    private int m_amount = default;
 
     protected override bool Apply(ApplyContext a_applyContext)
     {

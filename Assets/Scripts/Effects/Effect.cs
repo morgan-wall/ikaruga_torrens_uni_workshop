@@ -3,10 +3,10 @@
 public abstract class Effect : MonoBehaviour, IEffect
 {
     [SerializeField]
-    private string m_beginId;
+    private string m_beginId = default;
 
     [SerializeField]
-    private string m_endId;
+    private string m_endId = default;
 
     public string BeginId { get { return m_beginId; } }
     public string EndId { get { return m_beginId; } }

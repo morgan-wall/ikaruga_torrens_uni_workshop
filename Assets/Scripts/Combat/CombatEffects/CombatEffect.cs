@@ -31,7 +31,7 @@ public class CombatEffect : MonoBehaviour, ICombatEffectOwner
     private static CombatFilter[] k_nilFilters = new CombatFilter[] { };
 
     [SerializeField]
-    private Transform m_filters;
+    private Transform m_filters = default;
 
     private Targetable m_source = null;
     private CombatFilter[] m_combatFilters = null;

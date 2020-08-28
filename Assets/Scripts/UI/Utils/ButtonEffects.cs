@@ -5,10 +5,10 @@ using UnityEngine.UI;
 public class ButtonEffects : MonoBehaviour
 {
     [SerializeField]
-    private EffectSet m_effectSetPrefab;
+    private EffectSet m_effectSetPrefab = default;
 
     [SerializeField]
-    private string[] m_onClickIds;
+    private string[] m_onClickIds = default;
 
     private Button m_button;
     private EffectSet m_effectSet;

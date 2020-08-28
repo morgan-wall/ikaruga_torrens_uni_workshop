@@ -11,7 +11,7 @@ public class Crosshair : MonoBehaviour
     }
 
     [SerializeField]
-    private MoveInfo[] m_moveSequence;
+    private MoveInfo[] m_moveSequence = default;
 
     private int m_nextMoveInfoIndex;
     private float m_timeElapsedForCurrentMove;

@@ -6,13 +6,13 @@ public class CombatEffectContainer : MonoBehaviour, ICombatEffectOwner
     private static CombatFilter[] k_nilFilters = new CombatFilter[] { };
 
     [SerializeField]
-    private bool m_applyOnStart;
+    private bool m_applyOnStart = default;
 
     [SerializeField]
-    private Transform m_filters;
+    private Transform m_filters = default;
 
     [SerializeField]
-    private EffectSet m_effectSetPrefab;
+    private EffectSet m_effectSetPrefab = default;
 
     private EffectSet m_effectSet;
     private Targetable m_targetable;

@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField]
-    private UICanvas m_uiCanvas;
+    private UICanvas m_uiCanvas = default;
 
     private bool m_processDestroyedPlayerShip;
     private Ship m_activePlayerShip;

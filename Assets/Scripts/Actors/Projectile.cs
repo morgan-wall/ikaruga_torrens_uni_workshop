@@ -5,13 +5,13 @@ using UnityEngine.Assertions;
 public class Projectile : MonoBehaviour, IPooledObject
 {
     [SerializeField]
-    private Model m_modelPrefab;
+    private Model m_modelPrefab = default;
 
     [SerializeField]
-    private ProjectileEffects m_onHitEffects;
+    private ProjectileEffects m_onHitEffects = default;
 
     [SerializeField]
-    private AudioSource m_onInitAudioSource;
+    private AudioSource m_onInitAudioSource = default;
 
     private Vector2 m_direction;
     private Model m_model;

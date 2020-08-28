@@ -7,7 +7,7 @@ public class TitleViewController : MonoBehaviour
     public delegate void LevelSelectDelegate(TitleViewController a_titleViewController);
 
     [SerializeField]
-    private Button m_levelSelectButton;
+    private Button m_levelSelectButton = default;
 
     public event LevelSelectDelegate OnLevelSelectButtonClicked;
 

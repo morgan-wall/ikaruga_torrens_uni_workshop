@@ -4,25 +4,25 @@
 public class WeaponKindDefinition : ScriptableObject
 {
     [SerializeField]
-    private string m_name;
+    private string m_name = default;
 
     [SerializeField]
-    private string m_ConfigName;
+    private string m_ConfigName = default;
 
     [SerializeField]
-    private int m_startingAmmo;
+    private int m_startingAmmo = default;
 
     [SerializeField]
-    private int m_minAmmo;
+    private int m_minAmmo = default;
 
     [SerializeField]
-    private int m_maxAmmo;
+    private int m_maxAmmo = default;
 
     [SerializeField]
-    private float m_cooldown;
+    private float m_cooldown = default;
 
     [SerializeField]
-    private float m_warmup;
+    private float m_warmup = default;
 
     public string Name { get { return m_name; } }
     public string ConfigName { get { return m_ConfigName; } }

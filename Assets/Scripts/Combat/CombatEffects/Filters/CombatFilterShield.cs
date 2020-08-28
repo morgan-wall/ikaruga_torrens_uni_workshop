@@ -3,7 +3,7 @@
 public class CombatFilterShield : CombatFilter
 {
     [SerializeField]
-    private bool m_isActive;
+    private bool m_isActive = default;
 
     public override bool Check(ApplyContext a_applyContext)
     {

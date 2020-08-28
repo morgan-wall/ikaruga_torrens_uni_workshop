@@ -20,7 +20,7 @@ public class SpriteManager : MonoBehaviour
     public static SpriteManager Instance { get { return s_instance; } }
 
     [SerializeField]
-    private NumberInfo[] m_numberInfo;
+    private NumberInfo[] m_numberInfo = default;
 
     private GameObject[] m_prefabForDecimalDigit = new GameObject[k_decimalCharacterCount];
 

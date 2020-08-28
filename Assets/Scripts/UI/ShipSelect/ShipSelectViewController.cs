@@ -9,10 +9,10 @@ public class ShipSelectViewController : MonoBehaviour
     private static readonly int k_buttonObjectPoolSize = 10;
 
     [SerializeField]
-    private ShipSelectButton m_shipButtonPrefab;
+    private ShipSelectButton m_shipButtonPrefab = default;
 
     [SerializeField]
-    private RectTransform m_shipButtonArea;
+    private RectTransform m_shipButtonArea = default;
 
     private List<ShipSelectButton> m_shipSelectButtons = new List<ShipSelectButton>();
 

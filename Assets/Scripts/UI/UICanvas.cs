@@ -17,19 +17,19 @@ public class UICanvas : MonoBehaviour
     }
 
     [SerializeField]
-    private TitleViewController m_titleViewController;
+    private TitleViewController m_titleViewController = default;
 
     [SerializeField]
-    private LevelSelectViewController m_levelSelectViewController;
+    private LevelSelectViewController m_levelSelectViewController = default;
 
     [SerializeField]
-    private ShipSelectViewController m_shipSelectViewController;
+    private ShipSelectViewController m_shipSelectViewController = default;
 
     [SerializeField]
-    private InGameViewController m_inGameViewController;
+    private InGameViewController m_inGameViewController = default;
 
     [SerializeField]
-    private EndLevelViewController m_endLevelViewController;
+    private EndLevelViewController m_endLevelViewController = default;
 
     private View m_activeView = View.Title;
     private GameObject[] m_viewControllersByView;

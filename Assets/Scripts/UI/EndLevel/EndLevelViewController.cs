@@ -10,22 +10,22 @@ public class EndLevelViewController : MonoBehaviour
     private static readonly string k_defeatText = "DEFEAT";
 
     [SerializeField]
-    private Text m_resultText;
+    private Text m_resultText = default;
 
     [SerializeField]
-    private Text m_levelText;
+    private Text m_levelText = default;
 
     [SerializeField]
-    private Text m_shipText;
+    private Text m_shipText = default;
 
     [SerializeField]
-    private Text m_scoreText;
+    private Text m_scoreText = default;
 
     [SerializeField]
-    private Button m_retryButton;
+    private Button m_retryButton = default;
 
     [SerializeField]
-    private Button m_levelSelectButton;
+    private Button m_levelSelectButton = default;
 
     public event RetryDelegate OnRetryButtonClicked;
     public event LevelSelectDelegate OnLevelSelectButtonClicked;

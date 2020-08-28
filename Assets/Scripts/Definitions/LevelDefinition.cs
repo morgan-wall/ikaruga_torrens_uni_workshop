@@ -12,16 +12,16 @@ public class LevelDefinition : ScriptableObject, IContextDefinition<LevelContext
     }
 
     [SerializeField]
-    private string m_name;
+    private string m_name = default;
 
     [SerializeField]
-    private int m_startingLives;
+    private int m_startingLives = default;
 
     [SerializeField]
-    private int m_maxLives;
+    private int m_maxLives = default;
 
     [SerializeField]
-    private TimedEvents[] m_events;
+    private TimedEvents[] m_events = default;
 
     public string Name { get { return m_name; } }
     public int StartingLives { get { return m_startingLives; } }

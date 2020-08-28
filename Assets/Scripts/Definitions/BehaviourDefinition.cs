@@ -4,16 +4,16 @@
 public class BehaviourDefinition : ScriptableObject, IContextDefinition<BehaviourContext>
 {
     [SerializeField]
-    private bool m_canUsePrimaryWeapon;
+    private bool m_canUsePrimaryWeapon = default;
 
     [SerializeField]
-    private bool m_canUseSecondaryWeapon;
+    private bool m_canUseSecondaryWeapon = default;
 
     [SerializeField]
-    private float m_timeBetweenPrimaryWeaponShots;
+    private float m_timeBetweenPrimaryWeaponShots = default;
 
     [SerializeField]
-    private float m_timeBetweenSecondaryWeaponShots;
+    private float m_timeBetweenSecondaryWeaponShots = default;
 
     public bool CanUsePrimaryWeapon { get { return m_canUsePrimaryWeapon; } }
     public bool CanUseSecondaryWeapon { get { return m_canUseSecondaryWeapon; } }

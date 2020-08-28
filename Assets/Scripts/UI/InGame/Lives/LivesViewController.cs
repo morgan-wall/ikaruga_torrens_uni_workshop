@@ -12,10 +12,10 @@ public class LivesViewController : MonoBehaviour
     }
 
     [SerializeField]
-    private RectTransform m_shipIconArea;
+    private RectTransform m_shipIconArea = default;
 
     [SerializeField]
-    private RectTransform m_numbersGrid;
+    private RectTransform m_numbersGrid = default;
 
     private int m_lives;
     private GameObject m_shipIcon;

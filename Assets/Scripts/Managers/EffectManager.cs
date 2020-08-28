@@ -7,7 +7,7 @@ public class EffectManager : MonoBehaviour
     private int m_dynamicAudioSourcePoolCapacity = 30;
 
     [SerializeField]
-    private GameObject m_dynamicAudioSourcePrefab;
+    private GameObject m_dynamicAudioSourcePrefab = default;
 
     private static EffectManager s_instance;
 

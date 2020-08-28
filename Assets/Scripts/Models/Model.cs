@@ -13,7 +13,7 @@ public class Model : MonoBehaviour
     }
 
     [SerializeField]
-    private WeaponConfig[] m_weaponConfigurations;
+    private WeaponConfig[] m_weaponConfigurations = default;
 
     private Transform m_dynamicEffectAttachment;
 

@@ -4,7 +4,7 @@ using UnityEngine.Assertions;
 public class ManualLevelDefinitionManager : MonoBehaviour
 {
     [SerializeField]
-    private LevelDefinition[] m_levelDefinitions;
+    private LevelDefinition[] m_levelDefinitions = default;
 
     private static ManualLevelDefinitionManager s_instance;
 

@@ -3,10 +3,10 @@
 public class Oscillator : MonoBehaviour
 {
     [SerializeField]
-    private float m_maxOffset;
+    private float m_maxOffset = default;
 
     [SerializeField]
-    private float m_degreesPerSecond;
+    private float m_degreesPerSecond = default;
 
     private bool m_increasing;
     private float m_currOffset;

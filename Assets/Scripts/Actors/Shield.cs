@@ -15,10 +15,10 @@ public class Shield : MonoBehaviour
     }
 
     [SerializeField]
-    private VisualInfo[] m_visualInfo;
+    private VisualInfo[] m_visualInfo = default;
 
     [SerializeField]
-    private Transform m_shieldParent;
+    private Transform m_shieldParent = default;
 
     private Ship m_ship;
     private Element m_currElement;

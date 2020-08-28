@@ -4,7 +4,7 @@ using UnityEngine.Assertions;
 public class ManualShipDefinitionManager : MonoBehaviour
 {
     [SerializeField]
-    private ShipDefinition[] m_shipDefinitions;
+    private ShipDefinition[] m_shipDefinitions = default;
 
     private static ManualShipDefinitionManager s_instance;
 

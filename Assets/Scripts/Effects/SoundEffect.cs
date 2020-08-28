@@ -4,7 +4,7 @@ using UnityEngine.Assertions;
 public class SoundEffect : Effect
 {
     [SerializeField]
-    private AudioClip m_clip;
+    private AudioClip m_clip = default;
 
     private static GameObject k_dynamicAudioSource;
     private static GameObject DynamicAudioSourcePrefab

@@ -6,19 +6,19 @@ public class ProjectileDefinition : ScriptableObject, IContextDefinition<Project
     private static readonly int k_objectPoolSize = 30;
 
     [SerializeField]
-    private string m_name;
+    private string m_name = default;
 
     [SerializeField]
-    private float m_speed;
+    private float m_speed = default;
 
     [SerializeField]
     private float m_lifetime = -1.0f;
 
     [SerializeField]
-    private Element m_element;
+    private Element m_element = default;
 
     [SerializeField]
-    private Projectile m_prefab;
+    private Projectile m_prefab = default;
 
     public string Name { get { return m_name; } }
     public float Speed { get { return m_speed; } }

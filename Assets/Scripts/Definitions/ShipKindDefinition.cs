@@ -4,28 +4,28 @@
 public class ShipKindDefinition : ScriptableObject
 {
     [SerializeField]
-    private string m_name;
+    private string m_name = default;
 
     [SerializeField]
-    private float m_startingHealth;
+    private float m_startingHealth = default;
 
     [SerializeField]
-    private float[] m_maxHealthInUpgradeOrder;
+    private float[] m_maxHealthInUpgradeOrder = default;
 
     [SerializeField]
-    private float[] m_maxSpeedInUpgradeOrder;
+    private float[] m_maxSpeedInUpgradeOrder = default;
 
     [SerializeField]
-    private Element m_initialShieldElement;
+    private Element m_initialShieldElement = default;
 
     [SerializeField]
-    private float m_shieldRechargeDuration;
+    private float m_shieldRechargeDuration = default;
 
     [SerializeField]
-    private WeaponDefinition[] m_primaryWeaponDefinitionsInUpgradeOrder;
+    private WeaponDefinition[] m_primaryWeaponDefinitionsInUpgradeOrder = default;
 
     [SerializeField]
-    private WeaponDefinition[] m_secondaryWeaponDefinitionsInUpgradeOrder;
+    private WeaponDefinition[] m_secondaryWeaponDefinitionsInUpgradeOrder = default;
 
     public string Name { get { return m_name; } }
     public float StartingHealth { get { return m_startingHealth; } }

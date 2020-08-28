@@ -11,16 +11,16 @@ public class PathDefinition : ScriptableObject, IContextDefinition<PathContext>
     }
 
     [SerializeField]
-    private bool m_loop;
+    private bool m_loop = default;
 
     [SerializeField]
-    private bool m_destroyAtEnd;
+    private bool m_destroyAtEnd = default;
 
     [SerializeField]
-    private float m_travelTime;
+    private float m_travelTime = default;
 
     [SerializeField]
-    private Vector2[] m_normalisedPoints;
+    private Vector2[] m_normalisedPoints = default;
 
     private TravelPoint[] m_travelPoints;
 

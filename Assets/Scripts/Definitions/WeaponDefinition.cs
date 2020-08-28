@@ -4,13 +4,13 @@
 public class WeaponDefinition : ScriptableObject, IContextDefinition<WeaponContext>
 {
     [SerializeField]
-    private string m_name;
+    private string m_name = default;
 
     [SerializeField]
-    private WeaponKindDefinition m_weaponKindDefinition;
+    private WeaponKindDefinition m_weaponKindDefinition = default;
 
     [SerializeField]
-    private ProjectileDefinition m_projectileDefinition;
+    private ProjectileDefinition m_projectileDefinition = default;
 
     public string Name { get { return m_name; } }
     public WeaponKindDefinition WeaponKindDefinition { get { return m_weaponKindDefinition; } }

@@ -4,10 +4,10 @@ using UnityEngine.UI;
 public class ShipSelectButton : MonoBehaviour
 {
     [SerializeField]
-    private Text m_shipNameText;
+    private Text m_shipNameText = default;
 
     [SerializeField]
-    private Button m_button;
+    private Button m_button = default;
 
     private ShipDefinition m_shipDefinition;
 
